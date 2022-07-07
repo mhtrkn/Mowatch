@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 ![1](https://user-images.githubusercontent.com/80522648/177828753-e16ed487-5b50-4c2e-a8f2-b63b384aa526.png)
-### You can see the sample image of my project above.
+## You can see the sample image of my project above.
 
 ## Available Scripts
 
