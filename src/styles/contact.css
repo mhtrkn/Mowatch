@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.contact-background {
+    position: absolute;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../assets/home_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.contact-container {
+    flex: 0 1 1000px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 110px;
+}
+
+.screen {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background: transparent;
+    border-radius: 15px;
+}
+
+.screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.4);
+    z-index: -1;
+}
+
+.screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+    margin-right: auto;
+}
+
+.screen-header-button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 8px;
+    background: white;
+}
+
+.screen-header-button.close {
+    background: #ff0000;
+}
+
+.screen-header-button.maximize {
+    background: #e8e925;
+}
+
+.screen-header-button.minimize {
+    background: #74c54f;
+}
+
+.screen-header-right {
+    display: flex;
+}
+
+.screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+}
+
+.screen-body {
+    height: 500px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    display: flex;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius: 15px;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+
+.screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-title {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #850000;
+    font-size: 30px;
+}
+
+.app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 135px;
+    height: 4px;
+    background: #850000;
+}
+
+.app-contact {
+    font-family: 'Poppins', sans-serif;
+    margin-top: auto;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.app-form-group {
+    margin-bottom: 15px;
+}
+
+.app-form-group.message {
+    margin-top: 40px;
+}
+
+.app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.app-form-control {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+
+}
+
+.app-form-control::placeholder {
+    color: rgb(160, 160, 160);
+}
+
+.app-form-control:focus {
+    transition: 0.4s ease-out;
+    border-color: #850000;
+}
+
+.app-form-button {
+    font-size: 1.0em;
+    padding: 0;
+    bottom: 0;
+    display: inline-block;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+    background: linear-gradient(90deg, rgba(151, 151, 151, 0.4) 10%, rgba(100, 100, 100, 0.2) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    margin-top: 170px;
+    margin-left: 40px;
+}
+
+.app-form-button:hover {
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #850000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.credits-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dribbble {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 520px) {
+    .screen-body {
+        flex-direction: column;
+    }
+
+    .screen-body-item.left {
+        margin-bottom: 30px;
+    }
+
+    .app-title {
+        flex-direction: row;
+    }
+
+    .app-title span {
+        margin-right: 12px;
+    }
+
+    .app-title:after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .screen-body {
+        padding: 40px;
+    }
+
+    .screen-body-item {
+        padding: 0;
+    }
+}
